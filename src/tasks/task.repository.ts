@@ -1,9 +1,9 @@
 import { NotFoundException } from "@nestjs/common";
 import { EntityRepository, Repository } from "typeorm";
-import { CreateTaskDto } from "../dto/create-task.dto";
-import { GetTasksFilterDto } from "../dto/get-task-filter.dto";
-import { Task } from "../entities/task.entity";
-import { TaskStatus } from "../task-status.enum";
+import { CreateTaskDto } from "./dto/create-task.dto";
+import { GetTasksFilterDto } from "./dto/get-task-filter.dto";
+import { Task } from "./task.entity";
+import { TaskStatus } from "./task-status.enum";
 
 @EntityRepository(Task)
 export class TaskRespository extends Repository<Task>{ 
